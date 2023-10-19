@@ -2,6 +2,9 @@
 
 ### Math.random() give us `0.49530... random value` every time it runs.
 
+`note :`
+`If you multiply Math.random() by 4, the resulting random numbers will be between 0 (inclusive) and 4 (exclusive). So, the range of numbers you can expect from Math.random() * 4 will be from 0 (inclusive) to less than 4 (exclusive). This means you can get values like 0, 1.5, 3.999, and any decimal value in between.`
+
 ```js
 const randomNumber = () => Math.random();
 
