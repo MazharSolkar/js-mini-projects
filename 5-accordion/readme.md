@@ -52,4 +52,6 @@
 ```
 
 `output`
-![image](https://github.com/MazharSolkar/CSS-Interview-Prep/assets/86589812/d1f6959a-e132-4f2f-b755-f9f2ca1251e3)
+![image](https://github.com/john-smilga/javascript-basic-projects/assets/86589812/71ef82d3-c6d8-4c68-897c-9ac959bbc186)
+
+When I click on ➕ button it should clos
