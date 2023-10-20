@@ -71,6 +71,6 @@ questions.forEach((question) => {
 
 - When I click on ➕ button it should close answer of that particular question.
 - In javascript to achieve this I will first select all the questions.
-- Then in each question I will look for btn & answer in each question.
+- Then in each question I will look for btn & answer.
   (This way I can limit the search for btn and answer to that particular question only.)
 - Then I will add eventListener on btn when it is clicked i will toggle hide class on answer
