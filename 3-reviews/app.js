@@ -55,6 +55,7 @@ const setCurrentItem = (newCurrentItem) => {
 	*/
 
 	// RECURSIVE APPROACH
+	// (first if condition is base case to avoid unneccessary resursive call)
 	if (newCurrentItem >= 0 && newCurrentItem < reviews.length) {
 		currentItem = newCurrentItem;
 	} else {
