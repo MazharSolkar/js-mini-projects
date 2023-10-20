@@ -54,4 +54,23 @@
 `output`
 ![image](https://github.com/john-smilga/javascript-basic-projects/assets/86589812/71ef82d3-c6d8-4c68-897c-9ac959bbc186)
 
-When I click on ➕ button it should clos
+```js
+const questions = document.querySelectorAll('.question');
+
+// console.log(questions);
+
+questions.forEach((question) => {
+	const btn = question.querySelector('.btn');
+	const answer = question.querySelector('.ans');
+
+	btn.addEventListener('click', () => {
+		answer.classList.toggle('hidden');
+	});
+});
+```
+
+- When I click on ➕ button it should close answer of that particular question.
+- In javascript to achieve this I will first select all the questions.
+- Then in each question I will look for btn & answer in each question.
+  (This way I can limit the search for btn and answer to that particular question only.)
+- Then I will add eventListener on btn when it is clicked i will toggle hide class on answer
