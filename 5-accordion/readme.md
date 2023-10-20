@@ -74,3 +74,29 @@ questions.forEach((question) => {
 - Then in each question I will look for btn & answer.
   (This way I can limit the search for btn and answer to that particular question only.)
 - Then I will add eventListener on btn when it is clicked i will toggle hide class on answer
+
+> Now I want to all the other answers to close when I open one answer.
+
+- to achieve this I will write below code.
+
+```js
+const questions = document.querySelectorAll('.question');
+
+// console.log(questions);
+
+questions.forEach((question) => {
+	const btn = question.querySelector('.btn');
+	const answer = question.querySelector('.ans');
+
+	btn.addEventListener('click', () => {
+		questions.forEach((question) => {
+			const ans = question.querySelector('.ans');
+			if (ans !== answer) {
+				ans.classList.add('hidden');
+			}
+		});
+
+		answer.classList.toggle('hidden');
+	});
+});
+```
