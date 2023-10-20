@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="h-[2000px]">
+		<nav class="sticky top-0 bg-white">
+			<div
+				class="border-2 border-gray-500 md:flex justify-between items-center">
+				<h1 class="text-3xl font-bold">Mazhar</h1>
+				<ul
+					id="links"
+					class="mt-4 md:my-4 md:flex absolute md:static border-2 md:border-none right-2 p-2 md:p-0 bg-black md:bg-white md:text-black text-white hidden">
+					<li
+						class="my-2 p-1 md:my-0 md:mx-2 md:px-4 md:py-2 text-xl hover:bg-gray-200 hover:text-black">
+						Home
+					</li>
+					<li
+						class="my-2 p-1 md:my-0 md:mx-2 md:px-4 md:py-2 text-xl hover:bg-gray-200 hover:text-black">
+						About
+					</li>
+					<li
+						class="my-2 p-1 md:my-0 md:mx-2 md:px-4 md:py-2 text-xl hover:bg-gray-200 hover:text-black">
+						Contact
+					</li>
+				</ul>
+				<h1 id="burger" class="text-3xl md:hidden absolute right-0 top-0">
+					🍔
+				</h1>
+			</div>
+		</nav>
+
+		<div class="con"></div>
+		<script src="./app.js"></script>
+	</body>
+</html>
