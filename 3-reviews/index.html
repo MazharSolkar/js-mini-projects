@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="grid place-items-center">
+		<h1 class="my-20 text-4xl font-bold">Review Project</h1>
+
+		<!-- single article -->
+		<article class="grid place-items-center max-w-[800px]">
+			<img id="image" class="w-56" src="../dummy-image.jpg" alt="" />
+
+			<!-- Information div -->
+			<div class="my-4 flex flex-col items-center text-xl">
+				<h4 id="author">sara jones</h4>
+				<p id="job">ux designer</p>
+				<p id="info" class="text-center my-4">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cumque
+					dolorum, ipsum odit, eligendi nam sunt est velit, officiis voluptatem
+					fugiat atque? Repellendus vero ducimus unde placeat veniam laboriosam
+					laudantium laborum adipisci. Vel ipsam illum, labore placeat molestias
+					magni error cumque praesentium architecto?
+				</p>
+			</div>
+
+			<!-- button container -->
+			<div id="button-container">
+				<button
+					id="prev-btn"
+					class="px-4 py-2 mx-1 bg-red-500 rounded-lg text-white">
+					Previous
+				</button>
+				<button
+					id="random-btn"
+					class="px-4 py-2 mx-1 bg-blue-500 rounded-lg text-white">
+					Random
+				</button>
+				<button
+					id="next-btn"
+					class="px-4 py-2 mx-1 bg-green-500 rounded-lg text-white">
+					Next
+				</button>
+			</div>
+		</article>
+		<script type="module" src="./app.js"></script>
+	</body>
+</html>

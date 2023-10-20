@@ -4,11 +4,11 @@ const btnContainer = document.querySelector('.btn-container');
 let count = 0;
 
 const setCount = (newCount) => {
+	countSpan.classList.toggle('text-red-500', newCount < 0);
+	countSpan.classList.toggle('text-green-500', newCount > 0);
+
 	count = newCount;
 	countSpan.innerHTML = count;
-
-	countSpan.classList.toggle('text-red-500', count < 0);
-	countSpan.classList.toggle('text-green-500', count > 0);
 };
 
 btnContainer.addEventListener('click', (e) => {
