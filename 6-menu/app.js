@@ -4,7 +4,7 @@ const btnContainer = document.querySelector('.btn-container');
 const itemsContainer = document.querySelector('.items-container');
 
 const setBtnContainer = () => {
-	// 1 - GET UNIQUE CATEGORIES USING REDUCE FUNCTION
+	//* 1 - GET UNIQUE CATEGORIES USING REDUCE FUNCTION
 	const btns = menu.reduce(
 		(values, item) => {
 			if (!values.includes(item.category)) {
@@ -15,9 +15,9 @@ const setBtnContainer = () => {
 		['all']
 	);
 
-	// 2 - SET APPROACH FOR GETTING UNIQUE CATEGORIES.
+	//* 2 - SET APPROACH FOR GETTING UNIQUE CATEGORIES.
 	/*
-	const btns = ['all', ...new Set(menu.map((item) => item.category))];
+	 const btns = ['all', ...new Set(menu.map((item) => item.category))];
 	*/
 
 	btnContainer.innerHTML = btns
@@ -33,7 +33,16 @@ const setBtnContainer = () => {
 		.join('');
 
 	btnContainer.addEventListener('click', (e) => {
+		if (e.target.tagName !== 'BUTTON') return;
+
+		// I wrote above code because I don't want e.target to trigger when I click on other tags than Button.
+
 		const clickedCategory = e.target.dataset.category;
+
+		const btns = btnContainer.querySelectorAll('button');
+		btns.forEach((btn) => btn.classList.remove('bg-yellow-600', 'text-white'));
+
+		e.target.classList.add('bg-yellow-600', 'text-white');
 
 		const filterdMenu = menu.filter(
 			(item) => item.category === clickedCategory
