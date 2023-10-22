@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<main class="grid place-items-center">
+			<section class="about max-w-3xl">
+				<!-- SECTION TITLE -->
+				<h1 class="text-4xl text-center font-bold mt-20 mb-8">About</h1>
+
+				<!-- BUTTONS CONTAINER -->
+				<div id="btns-container" class="mb-4">
+					<span
+						id="history"
+						class="btn px-4 py-2 text-xl font-semibold border border-gray-500">
+						History
+					</span>
+					<span
+						id="vision"
+						class="btn px-4 py-2 text-xl font-semibold border border-gray-500">
+						Vision
+					</span>
+					<span
+						id="goals"
+						class="btn px-4 py-2 text-xl font-semibold border border-gray-500">
+						Goals
+					</span>
+				</div>
+
+				<!-- ARTICLE CONTAINER -->
+				<div id="articles-container">
+					<!-- SINGLE ARTICLE  -->
+					<article data-title="history" class="mb-4">
+						The history of our company dates back to the early 20th century when
+						a small family business was founded. Over the decades, we've evolved
+						and grown, adapting to the changing market and technologies. Today,
+						we are proud of our heritage and the journey that brought us here.
+					</article>
+
+					<!-- SINGLE ARTICLE  -->
+					<article data-title="vision" class="mb-4 hidden">
+						Our vision is to be a global leader in sustainable and innovative
+						solutions. We are committed to creating a better future for
+						generations to come. We believe in environmental responsibility and
+						are dedicated to developing products that have a positive impact on
+						the world.
+					</article>
+
+					<!-- SINGLE ARTICLE  -->
+					<article data-title="goals" class="mb-4 hidden">
+						Our goals are ambitious. We aim to expand our reach into new
+						markets, enhance our product offerings, and provide exceptional
+						customer experiences. We're dedicated to improving our operations
+						and fostering a culture of innovation and excellence.
+					</article>
+				</div>
+			</section>
+		</main>
+		<script src="./app.js"></script>
+	</body>
+</html>
