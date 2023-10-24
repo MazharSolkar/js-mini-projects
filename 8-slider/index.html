@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css"
+			rel="stylesheet"
+			type="text/css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<link rel="stylesheet" href="styles.css" />
+		<title>Sliders</title>
+	</head>
+	<body>
+		<!-- SLIDES SECTION -->
+		<section
+			id="slider-section"
+			class="w-[500px] mx-auto grid place-items-center">
+			<!-- SECTION-TITLE -->
+			<h1
+				class="section-title text-yellow-600 text-5xl text-center mt-32 mb-12 font-bold">
+				Our Team
+			</h1>
+			<!-- SLIDES CONTAINER -->
+			<div id="slides-container" class="relative">
+				<!-- <article class="card bg-base-100 shadow-xl slide">
+					<figure class="px-10 pt-10">
+						<img
+							src="https://www.course-api.com/images/people/person-3.jpeg"
+							alt="Shoes"
+							class="rounded-xl" />
+					</figure>
+					<div class="card-body items-center text-center">
+						<h2 class="card-title">Shoes!</h2>
+						<p>If a dog chews shoes whose shoes does he choose?</p>
+					</div>
+				</article> -->
+			</div>
+			<button id="prev-btn" class="btn">prev</button>
+			<button id="next-btn" class="btn">next</button>
+		</section>
+		<script type="module" src="app.js"></script>
+	</body>
+</html>
