@@ -49,6 +49,7 @@ const setProductsContainer = () => {
 
 setProductsContainer();
 
+//* FILTER BASED ON SEARCH TERM
 const searchInput = document.querySelector('#search');
 
 searchInput.addEventListener('keyup', (e) => {
@@ -63,6 +64,7 @@ searchInput.addEventListener('keyup', (e) => {
 	setProductsContainer();
 });
 
+//* FILTER BASED ON COMPANY NAME
 searchBtns.addEventListener('click', (e) => {
 	const clickedBtn = e.target;
 
@@ -78,5 +80,6 @@ searchBtns.addEventListener('click', (e) => {
 		);
 		console.log(filteredProducts);
 	}
+	searchInput.value = '';
 	setProductsContainer();
 });
