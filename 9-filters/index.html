@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<title>Document</title>
+	</head>
+	<body>
+		<section
+			id="fiter-section"
+			class="mt-8 p-4 mx-auto w-full max-w-7xl md:flex md:flex-row">
+			<!-- SEARCH CONTAINER -->
+			<div class="search-section mr-12 mb-4 md:mb-0">
+				<input
+					id="search"
+					class="bg-gray-200 p-1 rounded-lg border border-gray-500 mb-3 focus:outline-none focus:border-yellow-500"
+					placeholder="Search..."
+					type="search" />
+				<h1 class="btns-title">Company</h1>
+				<div id="search-btns">
+					<!-- <button class="btn block text-gray-500 hover:text-gray-900">
+						All
+					</button> -->
+				</div>
+			</div>
+			<!-- PRODUCTS CONTAINER -->
+			<div
+				id="products-container"
+				class="grid gap-8 lg:gap-4 place-items-center lg:grid-cols-2 xl:grid-cols-3 border-0 w-full">
+				<!-- <article class="w-[500px] lg:w-full rounded-lg shadow-lg text-center">
+					<img
+						class="h-[250px] w-full object-cover"
+						src="../dummy-image.jpg"
+						alt="" />
+					<h1 id="title" class="py-2 text-gray-500">High-Back Bench</h1>
+					<p class="text-gray-700 font-semibold">900rs</p>
+				</article> -->
+			</div>
+		</section>
+
+		<script type="module" src="./app.js"></script>
+	</body>
+</html>
