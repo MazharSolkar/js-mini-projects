@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<section
+			id="joke-section"
+			class="w-full max-w-[550px] mt-[200px] mx-auto shadow-xl border rounded-lg p-4">
+			<h1 class="text-center text-3xl font-bold mb-8">Random Joke</h1>
+			<p id="joke-container" class="text-center"></p>
+			<button
+				id="random-btn"
+				class="block mx-auto mt-12 bg-orange-500 font-bold text-white px-4 py-2 rounded-lg">
+				Generate Random Joke
+			</button>
+		</section>
+		<script type="module" src="app.js"></script>
+	</body>
+</html>
