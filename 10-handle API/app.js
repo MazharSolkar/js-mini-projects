@@ -19,7 +19,7 @@ const fetchRandomJoke = async () => {
 		console.log(response);
 
 		// respone objects status property is not equal to 200
-		// throw new Error will terminate the program there and then no need of adding return.
+		// throw new Error will terminate the program there and then, no need of adding return at the end of if block to stop js executing code further.
 		if (response.status !== 200) {
 			throw new Error('Failed to fetch joke from the server');
 		}
