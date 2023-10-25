@@ -27,6 +27,8 @@ const fetchProductDetails = async () => {
 
 		// ========================================================
 		// console.log('window.location.search: ', window.location.search);
+		// output : window.location.search:  ?id=recoW8ecgjtKx2Sj2
+
 		const params = new URLSearchParams(window.location.search);
 		const id = params.get('id');
 		// ========================================================
