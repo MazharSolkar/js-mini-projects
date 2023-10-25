@@ -1,100 +1,41 @@
-## Products Project
+# search query parameter;
 
-#### Structure (HTML)
+```bash
+https://vanilla-js-store.netlify.app/product.html?id=rec43w3ipXvP28vog
+```
 
-- section.products
+- To add query parameter first we add `?`.
+- After question mark we write search query parameter.
+- If you want to add more search query parameter then use & symbol.
 
-  - div.title
-    - h2(products)
-    - div.title-underline
-  - div.products-center
-    - div.products-container
-      - a.single-product href="product.html"
-        - img.single-product-img.img
-        - footer
-          - h5.name (product title)
-          - span.price($9.99)
+# adding more than one search query parameter
 
-- create product.html
-- basic structure
+```bash
+https://vanilla-js-store.netlify.app/product.html?id=rec43w3ipXvP28vog&name=mazhar&lname=solkar
+```
 
-#### Loading and Error
+# How to get search params from url
 
-- (CSS Loading Spinner)[https://youtu.be/DqqZEpctZ8w]
-- in .products-center
-- div.loading
-- p.error
+```js
+const url = 'https://course-api.com/react-store-single-product';
 
-#### API Docs
+const productContainer = document.querySelector('#product-container');
 
-- (Course API)[https://course-api.com/]
+const fetchProductDetails = async () => {
+	try {
+		productContainer.innerHTML = '<h4>Loading... </h4>';
 
-- (Products)[https://course-api.com/javascript-store-products]
-
-- (Single Product)[https://course-api.com/javascript-store-single-product?id=rec43w3ipXvP28vog]
-
-#### Fetch Products
-
-- select .products-center
-- fetch products
-- log result
-- try/catch
-
-#### Loading and Error
-
-- add loading while fetching
-- add error in catch
-
-#### Display Products - Setup
-
-- return data from fetchProducts
-- create displayProducts(list)
-- create start()
-- invoke fetchProducts and displayProducts in start
-- invoke start
-
-#### Display Products - Complete
-
-- iterate over list
-- pull out all the values
-- set productsDOM equal to result
-
-#### Single Product
-
-- link styles.css
-- a.btn.home-link(back home)
-- section.product
-- div.product-wrapper
-  - img.img
-  - div.product-info
-    - h3 (title)
-    - h5 (company)
-    - span (price)
-    - div.colors
-      - span.product-color
-    - p (lorem text)
-    - button.btn(add to cart)
-
-#### product.js setup
-
-- create product.js
-- link product.html
-- select .product
-- get single product url
-- setup fetchProduct(),displayProduct(),start()
-
-#### Loading, Error, Fetch Single Product
-
-- fetch single product
-- setup loading and error
-- make id dynamic
-- new URLSearchParams
-- window.location.search
-- get(keyName)
-
-#### Display Single Product
-
-#### Display Colors
-
-- iterate over colors array
-- return span with dynamic color value
+		// ========================================================
+		// console.log('window.location.search: ', window.location.search);
+		const params = new URLSearchParams(window.location.search);
+		const id = params.get('id');
+		// ========================================================
+		const response = await fetch(`${url}?id=${id}`);
+		const data = await response.json();
+		// console.log(data);
+		return data;
+	} catch (error) {
+		productContainer.innerHTML = `<h1>There was a problem...</h1>`;
+	}
+};
+```
