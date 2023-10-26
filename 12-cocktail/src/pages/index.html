@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Cocktails</title>
+	</head>
+	<body>
+		<h2 class="text-4xl font-semibold text-center my-12">Cocktails API</h2>
+		<form id="search-form" class="flex justify-center my-8">
+			<input
+				class="border border-gray-500 w-[250px] px-4 py-2 rounded-lg"
+				name="drink"
+				type="text"
+				placeholder="Search Your Favourite Cocktail" />
+		</form>
+		<section class="section-cocktails">
+			<!-- DISPLAY WHEN FETCHING PRODUCTS -->
+			<figure class="loading grid place-items-center">
+				<img src="../loading.gif" class="" alt="Loading" />
+			</figure>
+			<!-- WHEN NO SUCH IEM FOUND WILL SET TEXT INSIDE THIS -->
+			<h2 class="title text-4xl text-red-500 text-center"></h2>
+			<!-- DRINKS CONTAINER -->
+			<div
+				class="section-center drinks-container w-[70%] max-w-[1200px] grid gap-8 place-items-center md:grid-cols-2 lg:grid-cols-3 mx-auto"></div>
+		</section>
+		<script type="module" src="../app.js"></script>
+	</body>
+</html>
