@@ -3,15 +3,13 @@
 const baseURL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 
 // search by cocktail name
-const url =
+const searchURL =
 	'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita';
 
 // single cocktail details (will also use for navigation)
-const details =
+const detailsURL =
 	'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007';
 ```
-
-presentDrinks === setDrinks
 
 ## Directly importing module without exporting it.
 
