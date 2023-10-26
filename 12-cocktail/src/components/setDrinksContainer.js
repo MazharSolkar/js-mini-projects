@@ -16,7 +16,7 @@ const setDrinksContainer = ({ drinks }) => {
 			const { idDrink: id, strDrink: name, strDrinkThumb: image } = drink;
 			return `				
     <!-- SINGLE DRINK -->
-    <a href="drink.html" class="block w-full border-4">
+    <a href="singleDrink.html" class="block w-full border-4">
       <article data-id="${id}" class="Cocktail relative">
         <img
           class="h-[200px] w-full object-cover"

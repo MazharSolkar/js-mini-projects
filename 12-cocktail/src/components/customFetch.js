@@ -1,5 +1,5 @@
 import { showLoading } from './toggleLoading.js';
-const fetchDrinks = async (url) => {
+const customFetch = async (url) => {
 	showLoading();
 	try {
 		const response = await fetch(url);
@@ -10,4 +10,4 @@ const fetchDrinks = async (url) => {
 	}
 };
 
-export default fetchDrinks;
+export default customFetch;
