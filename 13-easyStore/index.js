@@ -30,7 +30,7 @@ const initialLoad = async () => {
         class="object-cover h-[200px] w-full"
         src="${image}"
         alt="" />
-	    <h1 class="product-title text-gray-500 my-4">${name}</h1>
+	    <h1 class="product-title text-gray-500 my-1">${name}</h1>
 	    <p class="product-price text-gray-700 font-bold">₹ ${price * 10}</p>
 	  </article>
 	  `;
