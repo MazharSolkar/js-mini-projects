@@ -9,13 +9,13 @@
 			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="styles.css" />
 		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
 		<!-- NAVBAR SECTION -->
 		<nav
-			class="sticky top-0 bg-transparent w-[95vw] max-w-[1200px] mx-auto shadow-md py-2 md:py-0 z-20 bg-white">
+			class="sticky top-0 bg-transparent w-[95vw] max-w-[1200px] mx-auto shadow-md py-2 md:py-0 z-20">
 			<div class="md:flex justify-between items-center">
 				<h1 class="text-3xl font-bold text-orange-400">
 					<i class="cart-icon fa-solid fa-cart-shopping"></i>
@@ -97,30 +97,17 @@
 			</article>
 		</section>
 
-		<!-- FEATURED PRODUCTS SECTION -->
-		<section class="featured-section w-90vw max-w-[1200px] mx-auto">
-			<h1
-				class="featured-section-title text-center font-bold text-2xl text-orange-400 my-12">
-				Featured Products
-			</h1>
-			<!-- FEATURED PRODUCTS CONTAINER -->
-			<div class="featured-products-container flex flex-wrap justify-center">
-				<!-- SINGLE PRODUCT -->
-				<!-- <article class="single-product shadow-lg w-[400px]">
-					<img
-						class="h-[100px] object-cover"
-						src="images/home_background.jpg"
-						alt="" />
-					<h1 class="product-title text-gray-500 my-2">High-Back Bench</h1>
-					<p class="product-price text-gray-700 font-bold">$9.99</p>
-				</article> -->
-			</div>
-			<!-- GO TO PRODUCTS PAGE BUTTON -->
-			<button
-				class="products-page-btn my-4 block mx-auto text-white text-xl bg-orange-400 px-8 py-2 rounded-lg font-bold">
-				<a href="./products.html"> All Products</a>
-			</button>
-		</section>
-		<script type="module" src="index.js"></script>
+		<div class="url-location-container bg-gray-200">
+			<h1 class="text-gray-500 py-12 px-4 text-xl">Home / Products</h1>
+		</div>
+		<h1
+			class="about-title text-3xl font-bold text-orange-400 my-12 text-center">
+			Our Products
+		</h1>
+		<!-- PRODUCTS CONTAINER -->
+		<div class="products-container">
+			<h1 class="text-3xl">This is products page</h1>
+		</div>
+		<script type="module" src="./src/pages/products.js"></script>
 	</body>
 </html>
