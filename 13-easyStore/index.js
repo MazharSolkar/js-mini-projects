@@ -14,6 +14,8 @@ const initialLoad = async () => {
 	// if products are fetched successfully then only I will execute code below the line.
 
 	addAllProductsToLocalStorage(products);
+	const loading = getElement('.loading');
+	loading.classList.add('hidden');
 
 	const featuredProducts = allProducts.filter(
 		(product) => product.featured === true
