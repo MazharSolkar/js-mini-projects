@@ -50,8 +50,10 @@
 
 		<!-- CART SECTION -->
 		<section
-			class="cart-section p-2 border-gray-300 rounded-lg w-[80vw] max-w-[500px] grid gap-4 place-content-start border-2 shadow-lg absolute bg-white hidden h-[100vh]">
-			<h1 class="text-2xl font-bold my-4 text-center">Your Cart</h1>
+			class="cart-section p-2 border-gray-300 rounded-lg w-[80vw] max-w-[500px] grid gap-4 place-content-start border-2 shadow-lg fixed bg-white hidden h-[100vh] z-[10]">
+			<h1 class="text-2xl text-gray-700 font-bold my-4 text-center">
+				Your Cart
+			</h1>
 			<!-- CART CLOSE ICON -->
 			<h1
 				class="close-cart-icon absolute top-0 right-0 text-3xl text-orange-400">
@@ -79,28 +81,15 @@
 					></span>
 				</div>
 			</article>
-			<!-- SINGLE CART ITEM -->
-			<article
-				class="single-cart-item grid grid-cols-3 shadow-lg border-2 h-[100px]">
-				<img
-					class="h-[100px] rounded-lg"
-					src="https://course-api.com/images/store/product-1.jpeg"
-					alt="item-image" />
-				<div class="cart-item-details pl-4">
-					<h1 class="cart-item-title text-orange-400">High-Back Bench</h1>
-					<h2 class="cart-item-price my-1 text-gray-700">$9.99</h2>
-					<button class="remove-cart-item text-red-500">remove</button>
-				</div>
-				<div class="cart-item-quantity-container grid place-items-center">
-					<span class="increase"
-						><i class="fa-solid fa-angle-up fa-fw"></i
-					></span>
-					<h1 class="cart-item-quantity text-gray-700">1</h1>
-					<span class="increase"
-						><i class="fa-solid fa-angle-down fa-fw"></i
-					></span>
-				</div>
-			</article>
+			<!-- Cart Total -->
+			<div
+				class="cart-bottom absolute left-[50%] translate-x-[-50%] bottom-[60px] flex flex-col justify-center">
+				<h1 class="text-4xl font-bold text-gray-700 mb-4">Total: 2000</h1>
+				<button
+					class="checkout-btn bg-orange-400 text-white py-2 px-4 rounded-lg">
+					Checkout
+				</button>
+			</div>
 		</section>
 
 		<!-- FEATURED PRODUCTS SECTION -->
