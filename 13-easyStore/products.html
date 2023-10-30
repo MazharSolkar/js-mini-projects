@@ -110,9 +110,25 @@
 			class="about-title text-3xl font-bold text-orange-400 my-12 text-center">
 			Our Products
 		</h1>
-		<!-- PRODUCTS CONTAINER -->
-		<div
-			class="products-container mx-auto grid gap-4 place-items-center w-[90vw] max-w-[1200px] md:grid-cols-2 lg:grid-cols-3 mb-12"></div>
+		<!-- SEARCH FILTER PRODUCTS CONTAINER -->
+		<section class="search-filter-products-container lg:flex">
+			<!-- SEARCH AND FILTER -->
+			<div class="search-filter-container lg:w-[270px] mt-4 mb-16 bg-gray-200">
+				<input
+					class="search-input ml-8 mb-2 border-2 border-gray-500 w-[200px] p-2 rounded-lg outline-gray-500"
+					type="search"
+					placeholder="Enter product name" />
+
+				<h1 class="px-6 mb-2 ml-2 font-semibold text-gray-800 text-xl px-4">
+					Company
+				</h1>
+				<div class="companies-container px-2"></div>
+			</div>
+			<!-- PRODUCTS CONTAINER -->
+			<h1 class="not-found-container"></h1>
+			<div
+				class="products-container mx-auto grid gap-4 place-items-center max-w-[1200px] md:grid-cols-2 lg:grid-cols-3 mb-12 relative"></div>
+		</section>
 		<script type="module" src="./src/pages/products.js"></script>
 	</body>
 </html>
