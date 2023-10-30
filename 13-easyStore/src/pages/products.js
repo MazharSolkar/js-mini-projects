@@ -26,7 +26,6 @@ companiesContainer.innerHTML = companiesBtns
 	.join('');
 
 setProductsContainer(productsContainer, allProducts);
-
 const loading = getElement('.loading');
 loading.classList.add('hidden');
 
@@ -67,7 +66,7 @@ const handleSearchInput = (searchValue) => {
 		productsContainer.innerHTML = `<div class="text-4xl text-red-400 md:col-span-2 lg:col-span-3">No Products Found</div>`;
 		return;
 	}
-	console.log(searchValue);
+	// console.log(searchValue);
 	setProductsContainer(productsContainer, searchedProducts);
 };
 

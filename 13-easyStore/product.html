@@ -9,18 +9,18 @@
 			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="styles.css" />
 		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<!-- WHILE FETCHING DATA -->
+		<!-- WHILE LOADING -->
 		<h1
-			class="loading w-[100vw] h-[100vh] bg-white grid place-items-center absolute z-[30] text-6xl text-orange-400">
+			class="loading w-[100vw] h-[100vh] bg-white grid place-items-center absolute top-0 left-0 z-[30] text-6xl text-orange-400">
 			<i class="fa-solid fa-spinner fa-spin"></i>
 		</h1>
 		<!-- NAVBAR SECTION -->
 		<nav
-			class="sticky top-0 bg-transparent w-[95vw] max-w-[1200px] mx-auto shadow-md py-2 md:py-0 z-20 bg-white">
+			class="sticky top-0 bg-transparent w-[95vw] max-w-[1200px] mx-auto shadow-md py-2 md:py-0 z-20">
 			<div class="md:flex justify-between items-center">
 				<h1 class="text-3xl font-bold text-orange-400">
 					<i class="cart-icon fa-solid fa-cart-shopping"></i>
@@ -49,10 +49,8 @@
 
 		<!-- CART SECTION -->
 		<section
-			class="cart-section p-2 border-gray-300 rounded-lg w-[80vw] max-w-[500px] grid gap-4 place-content-start border-2 shadow-lg fixed bg-white hidden h-[100vh] z-[10]">
-			<h1 class="text-2xl text-gray-700 font-bold my-4 text-center">
-				Your Cart
-			</h1>
+			class="cart-section p-2 border-gray-300 rounded-lg w-[80vw] max-w-[500px] grid gap-4 place-content-start border-2 shadow-lg absolute bg-white hidden h-[100vh]">
+			<h1 class="text-2xl font-bold my-4 text-center">Your Cart</h1>
 			<!-- CART CLOSE ICON -->
 			<h1
 				class="close-cart-icon absolute top-0 right-0 text-3xl text-orange-400">
@@ -80,42 +78,42 @@
 					></span>
 				</div>
 			</article>
-			<!-- Cart Total -->
-			<div
-				class="cart-bottom absolute left-[50%] translate-x-[-50%] bottom-[60px] flex flex-col justify-center">
-				<h1 class="text-4xl font-bold text-gray-700 mb-4">Total: 2000</h1>
-				<button
-					class="checkout-btn bg-orange-400 text-white py-2 px-4 rounded-lg">
-					Checkout
-				</button>
-			</div>
+			<!-- SINGLE CART ITEM -->
+			<article
+				class="single-cart-item grid grid-cols-3 shadow-lg border-2 h-[100px]">
+				<img
+					class="h-[100px] rounded-lg"
+					src="https://course-api.com/images/store/product-1.jpeg"
+					alt="item-image" />
+				<div class="cart-item-details pl-4">
+					<h1 class="cart-item-title text-orange-400">High-Back Bench</h1>
+					<h2 class="cart-item-price my-1 text-gray-700">$9.99</h2>
+					<button class="remove-cart-item text-red-500">remove</button>
+				</div>
+				<div class="cart-item-quantity-container grid place-items-center">
+					<span class="increase"
+						><i class="fa-solid fa-angle-up fa-fw"></i
+					></span>
+					<h1 class="cart-item-quantity text-gray-700">1</h1>
+					<span class="increase"
+						><i class="fa-solid fa-angle-down fa-fw"></i
+					></span>
+				</div>
+			</article>
 		</section>
 
-		<!-- FEATURED PRODUCTS SECTION -->
-		<section class="featured-section w-90vw max-w-[1200px] mx-auto">
-			<h1
-				class="featured-section-title text-center font-bold text-2xl text-orange-400 my-12">
-				Featured Products
-			</h1>
-			<!-- FEATURED PRODUCTS CONTAINER -->
-			<div class="featured-products-container flex flex-wrap justify-center">
-				<!-- SINGLE PRODUCT -->
-				<!-- <article class="single-product shadow-lg w-[400px]">
-					<img
-						class="h-[100px] object-cover"
-						src="images/home_background.jpg"
-						alt="" />
-					<h1 class="product-title text-gray-500 my-2">High-Back Bench</h1>
-					<p class="product-price text-gray-700 font-bold">$9.99</p>
-				</article> -->
-			</div>
-			<!-- GO TO PRODUCTS PAGE BUTTON -->
-			<button
-				class="products-page-btn my-4 block mx-auto text-white text-xl bg-orange-400 px-8 py-2 rounded-lg font-bold">
-				<a href="./products.html"> All Products</a>
-			</button>
-		</section>
+		<div class="url-location-container bg-gray-200">
+			<h1 class="text-gray-500 py-12 px-4 text-xl">Home / Product</h1>
+		</div>
+		<h1
+			class="about-title text-3xl font-bold text-orange-400 my-12 text-center">
+			Product Details
+		</h1>
 
-		<script type="module" src="index.js"></script>
+		<!-- PRODUCT CONTAINER -->
+		<section
+			class="product-container w-[90vw] mx-auto max-w-[1200px] grid gap-6 lg:grid-cols-2 place-items-center"></section>
+
+		<script type="module" src="./src/pages/product.js"></script>
 	</body>
 </html>
